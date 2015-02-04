@@ -1,22 +1,27 @@
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: 'Merriweather', $georgia;
+$sans-serif-font: 'Lato', $helvetica;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: rem(16);
+$em-base: 10px; // This is what the rem() mixin is based on. Since the default is 16px, and the font-size is 62.5%, we need to reduce this to 10px.
 
 // Line height
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$base-border-radius: 3px;
-$base-spacing: $base-line-height * 1em;
+$base-border-radius: rem(4);
+$base-spacing: rem(10);
+$base-spacing: $base-line-height * rem(16);
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
 $blue: #477dca;
+$white: #ffffff;
+$ebony: #000000;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #ddd;
@@ -24,7 +29,7 @@ $light-gray: #ddd;
 // Font Colors
 $base-background-color: #fff;
 $base-font-color: $dark-gray;
-$action-color: $blue;
+$action-color: $medium-gray;
 
 // Border
 $base-border-color: $light-gray;

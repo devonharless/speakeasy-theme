@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    title == current_page.data.title || "Speakeasy Minimal Mod Theme"
+
+    link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon"
+    link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:700|Merriweather:300,700' type='text/css'
+
+    == stylesheet_link_tag "application"
+
+    == javascript_include_tag  "all"
+
+  body class="#{page_classes}"
+    header.global
+      nav.horz-nav
+        h1.logo Your logo
+
+        ul
+          li
+            = link_to 'About', '#bio'
+          li
+            = link_to 'What we do', '#what'
+          li
+            = link_to 'How we do it', '#how'
+          li
+            = link_to 'Newsletter', '#news'
+          li
+            = link_to 'Contact', '#contact'
+    == yield
+
+

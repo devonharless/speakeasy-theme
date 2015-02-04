@@ -4,6 +4,7 @@ source "http://rubygems.org"
 
 gem "middleman"
 gem "middleman-livereload"
+gem "slim"
 gem "middleman-deploy"
 gem "bourbon"
 gem "neat"

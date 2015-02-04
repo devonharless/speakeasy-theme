@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  @include font-size-rem(16);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.wrapper {
+  @include outer-container;
+}
+
+.xtra-pad {
+  padding: $base-spacing*3 0;
+}
+
+.med-pad {
+  padding: $base-spacing*2 0;
+}
+
+.sm-pad {
+  padding: $base-spacing 0;
+}
+
+.wrapper.slim {
+  @include outer-container;
+  width: 50%;
+}
+
+.dark {
+  background: $dark-gray;
+  color: $white;
+}
+
+// Adjust font sizes globally
+@include media($mobile-screen) {
+  html {
+    font-size: 58%;
+  }
+}
+
+@include media($medium-screen-up) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@include media($large-screen-up) {
+  html {
+    font-size: 62.5%;
+  }
+}

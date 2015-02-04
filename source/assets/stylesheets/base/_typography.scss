@@ -14,7 +14,6 @@ h4,
 h5,
 h6 {
   font-family: $heading-font-family;
-  font-size: $base-font-size;
   line-height: $heading-line-height;
   margin: 0 0 $small-spacing;
 }
@@ -52,4 +51,42 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+.center {
+  text-align: center;
+}
+
+.main-title {
+  @extend .center;
+  @include font-size-rem(52);
+  font-weight: 200;
+}
+
+.secondary-title {
+  @extend .center;
+  @include font-size-rem(28);
+  font-weight: 300;
+}
+
+.section-title {
+  @extend .center;
+  @include font-size-rem(16);
+  background: #fff;
+  display: inline-block;
+  font-family: $sans-serif-font;
+  font-weight: 600;
+  letter-spacing: 3px;
+  padding: 0 $base-spacing*2;
+  text-transform: uppercase;
+}
+
+.column-title {
+  @include font-size-rem(16);
+  font-weight: 600;
+}
+
+.small-txt {
+  @extend .center;
+  @include font-size-rem(16);
 }

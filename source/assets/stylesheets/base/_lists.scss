@@ -29,3 +29,19 @@ dl {
     margin: 0;
   }
 }
+
+.inline {
+  display: inline;
+}
+
+.list-content li {
+  padding-left: rem(10);
+
+  &:before {
+    float: left;
+    left: rem(-10);
+    content: '-';
+    margin-right: rem(-5);
+    position: relative;
+  }
+}

@@ -1,0 +1,51 @@
+.global {
+  background: $ebony;
+  color: $white;
+
+  a {
+    @include font-size-rem(13);
+    font-family: $sans-serif-font;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.horz-nav {
+  @extend .center;
+  padding: $base-spacing;
+
+  li, a {
+    @extend .inline;
+    padding: $base-spacing $base-spacing/2;
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.intro {
+  &:after {
+    border-top: 1px solid $light-gray;
+    content: '';
+    display: block;
+    margin: $base-spacing*3 auto 0;
+    width: 66%;
+  }
+}
+
+.header-breaker {
+  @extend .center;
+  display: block;
+  margin: 0 auto;
+  z-index: 0;
+
+  &:before {
+    border-top: 1px solid $light-gray;
+    content: '';
+    display: block;
+    margin-bottom: rem(-18);
+    z-index: -1;
+  }
+}
