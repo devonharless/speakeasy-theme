@@ -10,9 +10,13 @@ title: Speakeasy - Minimal Mod Theme
 
 .wrapper.slim
 	section.bio
-	  img src="http://placehold.it/100x100"
-	  p Across from where? Oh, you're gonna be in a coma, all right. That's why you always leave a note! But I bought a yearbook ad from you, doesn't that mean anything anymore? No! I was ashamed to be SEEN with you. I like being with you. Steve Holt!
-	  = link_to 'Link out somewhere', '#'
+	  .bio-card.wrapper
+		  img.bio-card-img.fourth src="http://placehold.it/100x100"
+
+			.bio-card-text
+			  p Across from where? Oh, you're gonna be in a coma, all right. That's why you always leave a note! But I bought a yearbook ad from you, doesn't that mean anything anymore? No! I was ashamed to be SEEN with you. I like being with you. Steve Holt!
+
+			  = link_to 'Link out somewhere', '#'
 
 	section.offerings
 	  header.header-breaker
@@ -39,6 +43,7 @@ title: Speakeasy - Minimal Mod Theme
 		      strong
 		        = link_to 'Offering 4', '#'
 		      |  I care deeply for nature. Marry me. I don't criticize you! And if you're worried about criticism, sometimes a diet is the best defense.
+
 	figure.image
 	  img src="http://placehold.it/700x400"
 	  figcaption I don't criticize you! And if you're worried about criticism, sometimes a diet is the best defense. Did you enjoy your meal, Mom? You drank it fast enough.

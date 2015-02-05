@@ -4,6 +4,7 @@
 
   a {
     @include font-size-rem(13);
+    border-bottom: none;
     font-family: $sans-serif-font;
     font-weight: 600;
     letter-spacing: 1px;

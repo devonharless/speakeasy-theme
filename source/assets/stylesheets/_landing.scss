@@ -6,4 +6,35 @@
   .slim header {
     padding-bottom: $base-spacing*3;
   }
+
+  .bio-card {
+    &-img {
+      @include size(180);
+      border-radius: 50%;
+      margin-right: 0;
+    }
+
+    &-text {
+      @extend .two-thirds;
+      float: right;
+    }
+  }
+
+  .offerings li {
+    margin-bottom: $base-spacing;
+
+    &:nth-child(odd) {
+      padding-right: $base-spacing;
+    }
+
+    &:nth-child(even) {
+      padding-left: $base-spacing;
+    }
+
+    a {
+      color: $dark-gray;
+      font-weight: bold;
+      margin-right: $base-spacing/2;
+    }
+  }
 }

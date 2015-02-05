@@ -34,14 +34,18 @@ dl {
   display: inline;
 }
 
-.list-content li {
-  padding-left: rem(10);
+.list-content {
+  padding-top: $base-spacing;
 
-  &:before {
-    float: left;
-    left: rem(-10);
-    content: '-';
-    margin-right: rem(-5);
-    position: relative;
+  li {
+    padding-left: rem(10);
+
+    &:before {
+      float: left;
+      left: rem(-10);
+      content: '-';
+      margin-right: rem(-5);
+      position: relative;
+    }
   }
 }

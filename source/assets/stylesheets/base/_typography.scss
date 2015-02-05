@@ -15,15 +15,16 @@ h5,
 h6 {
   font-family: $heading-font-family;
   line-height: $heading-line-height;
-  margin: 0 0 $small-spacing;
+  margin: 0 0 $base-spacing;
 }
 
 p {
-  margin: 0 0 $small-spacing;
+  margin: 0 0 $base-spacing;
 }
 
 a {
   color: $action-color;
+  border-bottom: 1px solid $medium-gray;
   text-decoration: none;
   transition: color 0.1s linear;
 
@@ -45,6 +46,10 @@ hr {
   border-right: none;
   border-top: none;
   margin: $base-spacing 0;
+}
+
+figcaption {
+  font-style: italic;
 }
 
 img,
