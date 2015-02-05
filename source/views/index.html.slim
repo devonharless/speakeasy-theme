@@ -69,15 +69,20 @@ title: Speakeasy - Minimal Mod Theme
 .full-width.dark
   section.wrapper
     header
-	    h2#news.secondary-title Read our amazing, stupendous newsletter
+	    h2#contact.secondary-title Contact us
 	    p.small-txt
-	      em But I bought a yearbook ad from you, doesn't that mean anything anymore? No! I was ashamed to be SEEN with you.
+	      em
+	        | But I bought a yearbook ad from you, doesn't that mean anything anymore?
+	        br
+	        | No! I was ashamed to be SEEN with you.
 
-    form
+    form.wrapper.slim
 			label for="name" Name/Moniker
 			input id="name" type="text" name="name"
 
 			label for="email" Email
 			input id="email" type="text" name="email"
 
+			label for="message" Message
+			textarea id="message"
 			button.btn type="submit" Submit

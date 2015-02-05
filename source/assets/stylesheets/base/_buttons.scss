@@ -1,6 +1,7 @@
 #{$all-button-inputs},
 button {
   @include appearance(none);
+  @include font-size-rem(16);
   -webkit-font-smoothing: antialiased;
   background-color: $action-color;
   border-radius: $base-border-radius;
@@ -8,12 +9,13 @@ button {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: $sans-serif-font;
   font-weight: 600;
+  letter-spacing: 1px;
   line-height: 1;
-  padding: 0.75em 1em;
+  padding: $base-spacing/1.5 $base-spacing;
   text-decoration: none;
+  text-transform: uppercase;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -28,4 +30,16 @@ button {
     cursor: not-allowed;
     opacity: 0.5;
   }
+}
+
+.dark #{$all-button-inputs},
+.dark button {
+  background: $white;
+  color: $dark-gray;
+}
+
+.slim #{$all-button-inputs},
+.slim button {
+  display: block;
+  width: 100%;
 }
